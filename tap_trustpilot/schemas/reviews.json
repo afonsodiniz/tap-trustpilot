@@ -2,7 +2,7 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": ["string", "null"]
+      "type": ["string"]
     },
     "stars": {
       "type": ["integer", "null"]
@@ -58,14 +58,6 @@
     }
   },
   "required": [
-    "id",
-    "stars",
-    "title",
-    "text",
-    "language",
-    "createdAt",
-    "experiencedAt",
-    "isVerified",
-    "consumer"
+    "id"
   ]
 }

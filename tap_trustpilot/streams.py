@@ -21,7 +21,7 @@ class Reviews(TrustpilotStream):
 
     name = "reviews"
     path = "/business-units/64675b1c8598295b662c37f2/all-reviews"
-    primary_keys = ["call_id"]
+    primary_keys = ["id"]
 
     schema_filepath = SCHEMAS_DIR / "reviews.json" 
 
