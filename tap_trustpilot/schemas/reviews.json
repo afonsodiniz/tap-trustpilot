@@ -1,0 +1,71 @@
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": ["string", "null"]
+    },
+    "stars": {
+      "type": ["integer", "null"]
+    },
+    "title": {
+      "type": ["string", "null"]
+    },
+    "text": {
+      "type": ["string", "null"]
+    },
+    "language": {
+      "type": ["string", "null"]
+    },
+    "createdAt": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "experiencedAt": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "isVerified": {
+      "type": ["boolean", "null"]
+    },
+    "companyReply": {
+      "type": ["object", "null"],
+      "properties": {
+        "text": {
+          "type": ["string", "null"]
+        },
+        "createdAt": {
+          "type": ["string", "null"],
+          "format": "date-time"
+        },
+        "updatedAt": {
+          "type": ["string", "null"],
+          "format": "date-time"
+        }
+      },
+      "required": ["text", "createdAt"]
+    },
+    "consumer": {
+      "type": "object",
+      "required": ["displayName", "id"],
+      "properties": {
+        "displayName": {
+          "type": ["string", "null"]
+        },
+        "id": {
+          "type": ["string", "null"]
+        }
+      }
+    }
+  },
+  "required": [
+    "id",
+    "stars",
+    "title",
+    "text",
+    "language",
+    "createdAt",
+    "experiencedAt",
+    "isVerified",
+    "consumer"
+  ]
+}
