@@ -41,12 +41,10 @@
           "type": ["string", "null"],
           "format": "date-time"
         }
-      },
-      "required": ["text", "createdAt"]
+      }
     },
     "consumer": {
-      "type": "object",
-      "required": ["displayName", "id"],
+      "type": ["object", "null"],
       "properties": {
         "displayName": {
           "type": ["string", "null"]
